@@ -5,10 +5,10 @@ public class Calculadora{
     public static void decision(Scanner teclado){
 
         System.out.println("Digite o primeiro numero: ");
-        double num1 = teclado.nextInt();
+        double num1 = teclado.nextDouble();
 
         System.out.println("Digite o segundo numero: ");
-        double num2 = teclado.nextInt();
+        double num2 = teclado.nextDouble();
 
         teclado.nextLine();
 
@@ -46,7 +46,7 @@ public class Calculadora{
             }
              
             default -> {
-                System.out.println("Error");
+                System.out.println("Operador inválido");
                 return 0;
             }
         }
